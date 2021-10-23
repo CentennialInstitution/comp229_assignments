@@ -1,0 +1,73 @@
+<!-- Main Navigation -->
+<style>
+  /* Modify the background color */
+   
+  .navbar-custom {
+      background-color: rgb(197, 25, 10);
+  }
+  /* Modify brand and text color */
+   
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-text {
+      color: rgba(243, 244, 245, 0.986);
+  }
+</style>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <a class="navbar-brand" href="#">
+      </a>
+    <a class="navbar-brand" href="/"><img src="Assets/images/logo.PNG" width="75" height="75" class="img-fluid" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <% if (title == "Home"){ %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link navbar-custom" style="color: rgba(253, 253, 253, 0.966)" href="/home">Home </style> </a>
+        </li>
+
+        <% if (title == "About") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" style="color: rgba(253, 253, 253, 0.966)"  href="/about"> About </a>
+        </li>
+
+        <% if (title == "Projects") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" style="color: rgba(253, 253, 253, 0.966)" href="/projects"> Projects </a>
+        </li>
+
+        <% if (title == "Services") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" style="color: rgba(253, 253, 253, 0.966)" href="/services"> Services </a>
+        </li>
+          <% if (title == "Business Contacts") { %>
+            <li class="nav-item active">
+            <% } else  { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link" style="color: rgba(253, 253, 253, 0.966)" href="/business-list"> Business </a>
+            </li>
+
+        <% if (title == "Contact") { %>
+        <li class="nav-item active">
+        <% } else  { %>
+        <li class="nav-item">
+        <% } %>
+          <a class="nav-link" style="color: rgba(253, 253, 253, 0.966)" href="/contact"> Contact </a>
+        </li>
+    </div>
+  </nav>
