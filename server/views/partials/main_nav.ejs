@@ -54,6 +54,13 @@
         <% } %>
           <a class="nav-link" style="color: rgba(253, 253, 253, 0.966)" href="/services"> Services </a>
         </li>
+          <% if (title == "Business Contacts") { %>
+            <li class="nav-item active">
+            <% } else  { %>
+            <li class="nav-item">
+            <% } %>
+              <a class="nav-link" style="color: rgba(253, 253, 253, 0.966)" href="/business-list"> Business </a>
+            </li>
 
         <% if (title == "Contact") { %>
         <li class="nav-item active">
